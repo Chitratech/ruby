@@ -1,0 +1,37 @@
+<h1>Editing book</h1>
+
+<%= error_messages_for :book %>
+
+<% form_for(@book) do |f| %>
+  <p>
+    <b>Acc no</b><br />
+    <%= f.text_field :acc_no %>
+  </p>
+
+  <p>
+    <b>Title</b><br />
+    <%= f.text_area :title %>
+  </p>
+
+  <p>
+    <b>Authors</b><br />
+    <%= f.text_area :authors %>
+  </p>
+
+  <p>
+    <b>Edition</b><br />
+    <%= f.text_area :edition %>
+  </p>
+
+  <p>
+    <b>Publisher</b><br />
+    <%= f.text_area :publisher %>
+  </p>
+
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @book %> |
+<%= link_to 'Back', books_path %>

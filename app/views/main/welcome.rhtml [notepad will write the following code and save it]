@@ -1,0 +1,11 @@
+<html>
+<title> welcome
+</title>
+<body>
+<p>total no of books=<%=@num_books%></p>
+<form action="result">
+enter <input type="text" name="sid"/>
+<input type="submit" value="search"/>
+</form>
+</body>
+</html>
